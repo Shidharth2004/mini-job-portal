@@ -213,6 +213,7 @@ body{
     border-color: 059669;
     color: white;
     transform: translateY(-3px);
+    transistion: 0.3s ease-in;
     box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
 }
 
@@ -367,4 +368,5 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid #4B5563;
+
 }
