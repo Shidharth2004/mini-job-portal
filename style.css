@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px;
+    padding: 10px;
     background-color: #1F2937;
     flex-wrap: wrap;
 }
@@ -144,6 +144,7 @@ body{
     background-image: url('Asset/Hero-bg.webp');
     height: 90vh;
     background-size: cover;
+    background-blend-mode: multiply;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -210,10 +211,9 @@ body{
 
 .hero-login-btn:hover {
     background-color: #059669;
-    border-color: 059669;
+    border-color: #059669;
     color: white;
     transform: translateY(-3px);
-    transistion: 0.3s ease-in;
     box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
 }
 
@@ -318,14 +318,15 @@ body{
     justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-about{
     padding: 8px 10px;
     margin: 8px 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; 
 }
 
 .footer-about p{
@@ -349,7 +350,6 @@ body{
     flex-direction: column;
     padding: 8px;
     border-left: 2px solid #4B5563;
-
 }
 
 .footer-links a, 
@@ -360,6 +360,68 @@ body{
     margin: 5px;
 }
 
+.footer-contact{
+    border-left: 2px solid #4B5563;
+    width: 200px;
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+}
+.footer-input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid #878686;
+    background-color: #495057;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+    position: relative;
+}
+
+.footer-contact textarea{
+    height: 50px;
+    width: 200px;
+    border: 2px solid #878686;
+    background-color: #495057;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+label{
+    color: #878686;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    transition: top 350ms ease-in, font-size 350ms ease-in;
+}
+
+.footer-input:hover{
+    border: 2px solid #495057;
+}
+
+.footer-input:focus{
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+input[type="text"]:focus + label,
+.footer-input:focus + label,
+.footer-input:not(:placeholder-shown) + label {
+    top: -0.1em;
+    font-size: 0.75rem;
+    padding: 0 0.125em;
+    color: #fff;
+    background-color: #181f29;
+}
+
+.footer-contact button{
+    margin: 4px;
+}
+
 .footer-bottom{
     background-color: #181f29;
     color: #E2E8F0;
@@ -368,5 +430,4 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px solid #4B5563;
-
 }
