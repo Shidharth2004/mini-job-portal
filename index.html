@@ -4,14 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Job Portal</title>
     <script src="https://kit.fontawesome.com/b67c9d1fd4.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="Asset/favicon/favicon.svg">
+    <link rel="icon" href="Asset/favicon/favicon.ico" sizes="any">
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
 <!--Nav Section-->
     <nav class="navbar" id="mjpMain">
-        <div class="logo"><a href="#mjpMain">Mini Job Porta!</a></div>
+        <div class="logo"><a href="index.html">Mini Job Porta!</a></div>
         <ul class="menu">
-            <li><a href="#mjpMain">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Jobs</a></li>
             <li class="dropdown">
                 <a href="#">Service</a>
@@ -110,9 +112,28 @@
 <!--Footer Follow Us-->
             <div class="footer-social">
                 <h3>Follow Us</h3>
-                <a href="#">Tiwtter</a>
+                <a href="#">Twitter</a>
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
+            </div>
+<!--Contact form-->
+            <div class="footer-contact">
+                <h3>Get in touch</h3>
+                <form id="footerContact">
+                    <div class="container">
+                        <input type="text" name="username"  id="name" placeholder=" " class="footer-input" required/>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="container">
+                        <input type="email" name="email" id="email" class="footer-input" placeholder=" " required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="container">
+                        <textarea id="message" rows="5" class="footer-input" placeholder=" "></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                </form>
+                <button class="submit">Submit</button>
             </div>
         </div>
 <!--Footer Bottom-->
